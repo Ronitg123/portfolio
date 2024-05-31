@@ -22,6 +22,7 @@
       display: flex;
       min-height: 100vh;
     }
+    /* @media (max-width: 768px) { */
     .sidebar {
       flex: 0 0 280px;
       background-color: #333;
@@ -50,18 +51,19 @@
       flex-grow: 1;
       padding-top: 100px;
     }
+/* } */
   </style>
 </head>
 
 <body>
-  <div class="main-container" style="background-color: #fafafa;">
+  <div class="main-container lg-8" style="background-color: #fafafa;">
     <aside class="sidebar d-flex flex-column p-3" style="background-color: rgb(62, 200, 255);">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
         <center>
           <a style="color: white; font-size: 25px; text-decoration: none; margin-bottom: 200px;"
             href="index.html"><strong>Ronit Gupta</strong></a>
         </center>
-        <img src="images2.jpg" width="200px" height="200px" style="margin-top: 20px;"
+        <img src="images1.png" width="200px" height="200px" style="margin-top: 20px;"
           class="rounded-circle img-fluid mx-auto d-block" alt="person">
         <p>Hi, my name is Ronit Gupta and I'm a Front-end engineer. Welcome to my personal website!</p>
         <div class="social-links mt-3 text-center text-light">
@@ -80,12 +82,12 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
-            <i class='bx bx-briefcase'></i> Portfolio
+          <a href="#skills" class="nav-link text-white">
+            <i class='bx bx-briefcase'></i> Skills
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link text-white">
+          <a href="#Resume" class="nav-link text-white">
             <i class='bx bx-file'></i> Resume
           </a>
         </li>
@@ -94,11 +96,11 @@
             <i class='bx bx-certification'></i> Certifications
           </a>
         </li>
-        <li>
-          <a href="#" class="nav-link text-white">
+        <li0>
+          <a href="#Contact" class="nav-link text-white">
             <i class='bx bx-envelope'></i> Contact
           </a>
-        </li>
+        </li0>
       </ul>
       <hr>
       <div class="dropdown">
@@ -217,7 +219,7 @@
           </div>
         </div>
       </section>
-      <section id="resume" class="resume">
+      <section id="Resume" class="resume">
         <div class="container">
   
           <div class="section-title">
@@ -229,25 +231,25 @@
             <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
               <h3 class="resume-title">Sumary</h3>
               <div class="resume-item pb-0">
-                <h4>Alex Smith</h4>
+                <h4>Ronit Gupta</h4>
                 <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
                 <ul>
-                  <li>Portland par 127,Orlando, FL</li>
-                  <li>(123) 456-7891</li>
-                  <li>alice.barkley@example.com</li>
+                  <li>A9 apartment</li>
+                  <li>8094175275</li>
+                  <li>gronit132@gmail.com</li>
                 </ul>
               </div>
   
               <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                <h5>2015 - 2016</h5>
+              <div class="resume-item" id="Resume">
+                <h4>Masters in computer and application</h4>
+                <h5>2023-2025</h5>
                 <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
                 <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
               </div>
               <div class="resume-item">
-                <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                <h5>2010 - 2014</h5>
+                <h4>Bachelor of Commerce</h4>
+                <h5>2020-2023</h5>
                 <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
                 <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
               </div>
@@ -255,9 +257,9 @@
             <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <h3 class="resume-title">Professional Experience</h3>
               <div class="resume-item">
-                <h4>Senior graphic design specialist</h4>
-                <h5>2019 - Present</h5>
-                <p><em>Experion, New York, NY </em></p>
+                <h4>Front-end developer</h4>
+                <h5>Present</h5>
+                <p><em>Jaipur</em></p>
                 <ul>
                   <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
                   <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
@@ -278,19 +280,16 @@
               </div>
             </div>
           </div>
-  
         </div>
         <div class="container">
-
           <div class="section-title">
             <h2>Contact</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
-  
           <div class="row aos-init aos-animate" data-aos="fade-in">
   
             <div class="col-lg-5 d-flex align-items-stretch">
-              <div class="info">
+              <div class="info" id="Contact">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
@@ -309,7 +308,7 @@
                   <p>+91 8094175275</p>
                 </div>
   
-                <img src="images3,jpg.jpg" style="height: 300px; width: 500px;" alt="map">
+                <img src="images3.jpg" style="height: 300px; width: 500px;" alt="map">
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe> -->
               </div>
   
