@@ -5,33 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <style>
-    .bg{
-      background-color: #0078ad;
+    body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.08px;
+    line-height: 1.5;
+    color: #141414;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+  }
+.bg{
+    background-color: #0078ad;
+  }
+  
+  .container{
+    background-color: #0078ad;
+    color: white;
+  }
+  
+  .cart-icon {
+    margin-left: 50px;
+  }
+  
+  .sign-option{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-wrapper {
+      background-color: #0C5273;
+      padding: 15px;
+  }
+  
+  .header-wrapper div{
+      background-color: #0C5273;
+  }  
+  @media screen and (max-width: 768px) {
+    .cart-icon {
+      margin-left: 20px;
     }
-    .container{
-      background-color: #0078ad;
-      color: white;
+  
+    .sign-option {
+      margin-left: 30px;
     }
+}
+    .container banner{
+        justify-content: space-evenly;
+        width: 18rem;
+        margin: 50px;
+        padding: 50px;
+    }  
   </style>
 </head>
 <body>
   <div class="bg">
     <div class="container d-flex align-items-center">
-      <a class="navbar-brand px-6 me-lg-5" href="#"> <!-- Added me-3 (margin end) class -->
+      <a class="navbar-brand px-6 me-lg-5" href="#">
         <img src="https://www.jiomart.com/assets/ds2web/images/Jiomart-logo-ds2.0.svg?v=24" alt="Bootstrap" width="100" height="70">
       </a>
-      <img src="geo-alt-fill.svg" alt="delever" class="ms-3"> <!-- Added ms-3 (margin start) class -->
-     <span> <strong>Deliver to mumbai 400020</strong></span>
-     <!-- <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid"> -->
-    <img src="search.svg" alt="Search">
-      <input class="form-control me-2" type="search" placeholder="Search JioMart" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  <!-- </div>
-</nav> -->
+      <img src="geo-alt-fill.svg" alt="delever" class="ms-3"> 
+      <span> <strong>Deliver to mumbai 400020</strong></span>
+      <img src="search.svg" alt="Search">
+      <input class="form-control me-2" type="search" placeholder="Search JioMart" aria-label="Search" style="border-radius: 50px;">
+      <span class="header-main-search-icon list-icon" id="btn_search_list"> <img src="https://www.jiomart.com/assets/ds2web/jds-icons/ds-list-icon.svg" alt=""> </span>
+      <div class="d-flex align-items-center">
+        <div class="me-3 cart-icon">
+          <img src="cart-fill.svg" alt="cart">
         </div>
+        <div class="me-3 sign-option">
+          <img src="person-circle.svg" alt="sign">
+          <span>Sign in</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="header-wrapper">
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+        Groceries
+    </div>
+    <div class="col">
+      Premium Fruits
+    </div>
+    <div class="col">
+        Home & Kitchen
+    </div>
+    <div class="col">
+        Fashion
+      </div>
+      <div class="col">
+        Electronics
+      </div>
+      <div class="col">
+       Beauty
+      </div>
+      <div class="col">
+        Jewellery
+      </div>
+      <div class="col">
+        HomeImprovement
+      </div>
+      <div class="col">
+        All Categories
+      </div>
+  </div>
+</div>
+</section>
+<div class="container banner d-flex">
+      <img src="1715252761_kitchendining.webp" class="card-img-top" alt="...">
+      <img src="1717177877_Back_to_School.jpg" class="card-img-top" alt="...">
+      <img src="1717178071_Home_Cleaning_Fest.webp" class="card-img-top" alt="...">
+      <img src="1715252761_kitchendining.webp" class="card-img-top" alt="...">
+      <img src="1715252761_kitchendining.webp" class="card-img-top" alt="...">
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
